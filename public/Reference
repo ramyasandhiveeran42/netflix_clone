@@ -1,0 +1,35 @@
+tmdb movie database
+RamyaSandhiveeran  --- id
+2003  --- pswd
+Api key create 
+
+tmdb image url --- url example
+-----------------------------------------
+login logout aunthentication and authorization using firebase
+firebase.google.com
+create one project using firebase
+create aunthentication in build
+create database in build
+
+project overview la web click pani create web app using title and register
+we will get some code that is our aunthentication code paste in our code
+
+npm install firebase
+npm i react-firebase-hooks
+
+firebase.js la paste our code
+
+// Initialize aunthentication
+const auth = getAuth(app)
+// Initialize database
+const db = getFirestore(app)
+---------provide app inside this
+
+signUp user function
+login user function
+logout function
+
+-----------------------
+react toastify
+npm i react-toastify
+toast import copy panitu 

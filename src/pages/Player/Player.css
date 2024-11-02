@@ -1,0 +1,64 @@
+.player{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.player img{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    cursor: pointer;
+}
+.player iframe{
+    border-radius: 10px;
+}
+.player-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .player img {
+        width: 40px; /* Decrease image size on smaller screens */
+        top: 10px; /* Adjust position */
+        left: 10px; /* Adjust position */
+    }
+
+    .player iframe {
+        height: 300px; /* Adjust height of iframe on smaller screens */
+    }
+
+    .player-info {
+        flex-direction: column; /* Stack player info vertically */
+        align-items: flex-start; /* Align items to the start */
+        width: 95%; /* Increase width for smaller screens */
+    }
+
+    .player-info > * {
+        margin-bottom: 10px; /* Add spacing between info elements */
+    }
+}
+
+@media (max-width: 480px) {
+    .player img {
+        width: 35px; /* Further decrease image size */
+    }
+
+    .player iframe {
+        height: 200px; /* Further adjust height of iframe */
+    }
+
+    .player-info {
+        width: 100%; /* Full width for player info */
+    }
+
+    .player-info > * {
+        font-size: 12px; /* Decrease font size for info elements */
+    }
+}
